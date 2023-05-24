@@ -1,0 +1,105 @@
+.About_container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5%;
+}
+
+.About_Me{
+    width: 250px;
+    aspect-ratio: 1/1.4;
+    border-radius: 2rem;
+    background: linear-gradient(45deg, transparent, var(--color-primary),transparent);
+    display: grid;
+    place-items: center;
+}
+
+.About_Me-image{
+    border-radius: 2rem;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--transition);
+}
+
+.About_Me-image:hover{
+    transform: rotate(0);
+    }
+
+    .About_cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .About_card{
+        background-color: var(--color-bg-variant);
+        border: 1px solid transparent;
+        border-radius: 1rem;
+        padding: 2rem;
+        text-align: center;
+        transition: var(--transition);
+    }
+
+    .About_card:hover{
+        background: transparent;
+        background-color: var(--color-primary-variant);
+        cursor: default;
+    }
+
+.About_icon{
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.About_card h5 {
+    font-size: 0.95rem;
+}
+
+.About_card small{
+font-size: 0.7rem;
+color: var(--color-light);
+}
+
+.About_content{
+margin: 2rem 0 2.6rem;
+color: var(--color-light);
+}
+
+/*======================MEDIA DEVICESS (Medium)=======================*/
+@media screen and (max-width: 1024px){
+    .About_container{
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .About_Me{
+        width: 50%;
+        margin: 2rem auto 4rem;
+    }
+
+    .About_content p {
+        margin: 1rem 0 1.5rem;
+    }
+       }
+    
+    /*======================MEDIA DEVICESS SMALL=======================*/
+    @media screen and (max-width: 600px){
+        .About_Me{
+            width: 65%;
+            margin: 0rem auto 3rem;
+        }
+    
+        .About_cards{
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .About_content {
+         text-align: center;
+        }
+
+        .About_content p {
+            margin:1.5rem 0;
+        }
+    }
+ 

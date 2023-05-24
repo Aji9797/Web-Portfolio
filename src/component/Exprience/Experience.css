@@ -1,0 +1,69 @@
+.Experience_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+    
+.Experience_container > div{
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+}
+
+.Experience_container > div:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.Experience_container > div h3{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.Experience_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Experience_details{
+    display: flex;
+    gap: 1rem;
+}
+
+.Experience_details-icon{
+    margin-top: 6px;
+    color: var(--color-primary);
+}
+
+/*======================MEDIA DEVICESS (Medium)=======================*/
+@media screen and (max-width: 1024px){
+    .Experience_container{
+        grid-template-columns: 1fr;
+    }
+
+    .Experience_container>div{
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .Experience_content{
+        padding: 1rem;
+    }
+    }
+    
+    /*======================MEDIA DEVICESS SMALL=======================*/
+    @media screen and (max-width: 600px){
+        .Experience_container{
+            gap: 1rem;
+        }
+
+    .Experience_container > div{
+        width: 100%;
+        padding: 2rem 1rem;
+
+    }
+    }
